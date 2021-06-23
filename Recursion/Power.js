@@ -24,7 +24,7 @@ function power(base, exponent) {
 	return answer;
 }
 
-
+// Pure
 function power2(base, exponent) {
     if(exponent === 0) return 1;
     return base * power(base,exponent-1);

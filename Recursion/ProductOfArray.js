@@ -21,6 +21,7 @@ function productOfArray(input) {
 	return product;
 }
 
+// Pure 
 function prdtOfArray(arr) {
     if(arr.length === 0) {
         return 1;

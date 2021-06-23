@@ -28,6 +28,8 @@ function fib(input) {
 	return array[input];
 }
 
+
+// Pure
 function fibonacciSeries(n) {
     if (n <= 2) return 1;
     return fib(n-1) + fib(n-2);
