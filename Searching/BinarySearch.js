@@ -7,13 +7,21 @@ function binarySearch(inputArray, target) {
 	let right = inputArray.length - 1;
 
 	while (left < right) {
+
+        // First check if the target is in the left
+        if (inputArray[left] === target) {
+            return left;
+        }
+
+        // Then check if the target is in the right
+        if (inputArray[right] === target) {
+            return right;
+        }
+
+        // If neither, find the middle index again
 		let middle = Math.round((left + right) / 2);
 
-        if (inputArray[left] === target) {
-			return left;
-		} else if (inputArray[right] === target) {
-			return right;
-		} else if (inputArray[middle] < target) {
+       if (inputArray[middle] < target) {
 			left = middle + 1;
 		} else if (inputArray[middle] > target) {
 			right = middle - 1;
