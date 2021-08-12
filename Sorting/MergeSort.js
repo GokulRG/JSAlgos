@@ -40,3 +40,4 @@ function mergeSort(arr) {
 
     return merge(left, right);
 }
+
