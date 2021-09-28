@@ -1,0 +1,1 @@
+# In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size. That's when we could make use of the Sliding Window pattern
